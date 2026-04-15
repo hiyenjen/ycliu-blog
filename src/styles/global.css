@@ -5,10 +5,10 @@
 
 :root,
 html[data-theme="light"] {
-  --background: #fdfdfd;
-  --foreground: #282728;
-  --accent: #006cac;
-  --muted: #e6e6e6;
+  --background: #FCF9F8;
+  --foreground: #4F4844;
+  --accent: #D87756;
+  --muted: #F6F3F2;
   --border: #ece9e9;
 }
 
@@ -21,7 +21,7 @@ html[data-theme="dark"] {
 }
 
 @theme inline {
-  --font-app: var(--font-google-sans-code);
+  --font-app: var(--font-noto-serif-tc), var(--font-google-sans-code), serif;
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-accent: var(--accent);

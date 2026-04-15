@@ -57,17 +57,25 @@ export default defineConfig({
       }),
     },
   },
-  experimental: {
-    preserveScriptOrder: true,
-    fonts: [
-      {
-        name: "Google Sans Code",
-        cssVariable: "--font-google-sans-code",
-        provider: fontProviders.google(),
-        fallbacks: ["monospace"],
-        weights: [300, 400, 500, 600, 700],
-        styles: ["normal", "italic"],
-      },
-    ],
-  },
+experimental: {
+  preserveScriptOrder: true,
+  fonts: [
+    {
+      name: "Google Sans Code",
+      cssVariable: "--font-google-sans-code",
+      provider: fontProviders.google(),
+      fallbacks: ["monospace"],
+      weights: [300, 400, 500, 600, 700],
+      styles: ["normal", "italic"],
+    },
+    {
+      name: "Noto Serif TC",
+      cssVariable: "--font-noto-serif-tc",
+      provider: fontProviders.google(),
+      fallbacks: ["serif"],
+      weights: [300, 400, 500, 700],
+      styles: ["normal"],
+    },
+  ],
+},
 });

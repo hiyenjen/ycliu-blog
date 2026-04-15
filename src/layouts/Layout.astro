@@ -66,6 +66,15 @@ const structuredData = {
       cssVariable="--font-google-sans-code"
       preload={[{ subset: "latin", weight: 400, style: "normal" }]}
     />
+    <!-- Load Font -->
+<Font
+  cssVariable="--font-google-sans-code"
+  preload={[{ subset: "latin", weight: 400, style: "normal" }]}
+/>
+<Font
+  cssVariable="--font-noto-serif-tc"
+  preload={[{ weight: 400, style: "normal" }]}
+/>
 
     <!-- General Meta Tags -->
     <title>{title}</title>
@@ -140,7 +149,7 @@ const structuredData = {
     <!-- Minimal inline script to prevent FOUC - sets theme immediately -->
     <script is:inline>
       (function () {
-        const initialColorScheme = ""; // "light" | "dark"
+        const initialColorScheme = "light"; // "light" | "dark"
         const currentTheme = localStorage.getItem("theme");
 
         function getPreferTheme() {
