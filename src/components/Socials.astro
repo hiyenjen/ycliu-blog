@@ -1,6 +1,12 @@
 ---
 import { SOCIALS } from "@/constants";
 import LinkButton from "./LinkButton.astro";
+
+type Props = {
+  size?: "sm" | "md";
+};
+
+const { size = "md" } = Astro.props;
 ---
 
 <div class="flex flex-wrap items-center gap-1">
@@ -8,10 +14,16 @@ import LinkButton from "./LinkButton.astro";
     SOCIALS.map(social => (
       <LinkButton
         href={social.href}
-        class="p-2 hover:rotate-6 sm:p-1"
+        class={size === "sm" ? "p-1 hover:rotate-6" : "p-2 hover:rotate-6 sm:p-1"}
         title={social.linkTitle}
       >
-        <social.icon class="inline-block size-6 scale-125 fill-transparent stroke-current stroke-2 opacity-90 group-hover:fill-transparent sm:scale-110" />
+        <social.icon
+          class={
+            size === "sm"
+              ? "inline-block size-4 fill-transparent stroke-current stroke-2 opacity-70"
+              : "inline-block size-6 scale-125 fill-transparent stroke-current stroke-2 opacity-90 group-hover:fill-transparent sm:scale-110"
+          }
+        />
         <span class="sr-only">{social.linkTitle}</span>
       </LinkButton>
     ))

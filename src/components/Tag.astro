@@ -7,7 +7,7 @@ type Props = {
   size?: "sm" | "lg";
 };
 
-const { tag, tagName, size = "lg" } = Astro.props;
+const { tag, tagName, size = "sm" } = Astro.props;
 ---
 
 <li>
@@ -16,8 +16,8 @@ const { tag, tagName, size = "lg" } = Astro.props;
     transition:name={tag}
     class:list={[
       "flex items-center gap-0.5",
-      "border-b-2 border-dashed border-foreground",
-      "hover:-mt-0.5 hover:border-accent hover:text-accent",
+      "border-b-1 border-border",
+      "hover:-mt-0.5 hover:border-border hover:text-accent",
       "focus-visible:border-none focus-visible:text-accent",
       { "text-sm": size === "sm" },
       { "text-lg": size === "lg" },
@@ -25,9 +25,9 @@ const { tag, tagName, size = "lg" } = Astro.props;
   >
     <IconHash
       class:list={[
-        "opacity-80",
-        { "size-5": size === "lg" },
-        { "size-4": size === "sm" },
+        "opacity-40",
+        { "size-4": size === "lg" },
+        { "size-3": size === "sm" },
       ]}
     />
     {tagName}

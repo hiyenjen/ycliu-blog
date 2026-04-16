@@ -13,12 +13,12 @@ const { variant: Heading = "h2", id, data, filePath } = Astro.props;
 const { title, description, ...props } = data;
 ---
 
-<li class="my-6">
+<li class="my-3">
   <a
     href={getPath(id, filePath)}
     class:list={[
       "inline-block text-lg font-medium text-foreground",
-      "decoration-dashed underline-offset-4 hover:underline hover:text-accent",
+      "underline-offset-4 hover:underline decoration-solid hover:decoration-muted-foreground hover:text-foreground",
       "focus-visible:no-underline focus-visible:underline-offset-0",
     ]}
   >
