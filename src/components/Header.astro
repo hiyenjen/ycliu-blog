@@ -28,7 +28,7 @@ const isActive = (path: string) => {
 </a>
 
 <header
-  class="app-layout flex flex-col items-center justify-between sm:flex-row"
+  class="fixed top-0 left-0 right-0 z-50 bg-background/90 backdrop-blur-sm app-layout flex flex-col items-center justify-between sm:flex-row"
 >
   <div
     id="top-nav-wrap"
@@ -39,46 +39,26 @@ const isActive = (path: string) => {
       "flex items-baseline justify-between sm:items-center",
     ]}
   >
-    <a
-      href="/"
-      class="absolute py-1 text-xl leading-8 font-semibold whitespace-nowrap sm:static sm:my-auto sm:text-2xl sm:leading-none"
-    >
-      {SITE.title}
-    </a>
     <nav
       id="nav-menu"
-      class="flex w-full flex-col items-center sm:ms-2 sm:flex-row sm:justify-end sm:space-x-4 sm:py-0"
+      class="flex w-full flex-row items-center justify-end gap-x-5 py-0"
     >
-      <button
-        id="menu-btn"
-        class="focus-outline self-end p-2 sm:hidden"
-        aria-label="Open Menu"
-        aria-expanded="false"
-        aria-controls="menu-items"
-      >
-        <IconX id="close-icon" class="hidden" />
-        <IconMenuDeep id="menu-icon" />
-      </button>
+
       <ul
         id="menu-items"
         class:list={[
-          "mt-4 grid w-44 grid-cols-2 place-content-center gap-2",
-          "[&>li>a]:block [&>li>a]:px-4 [&>li>a]:py-3 [&>li>a]:text-center [&>li>a]:font-medium [&>li>a]:hover:text-accent sm:[&>li>a]:px-2 sm:[&>li>a]:py-1",
-          "hidden",
-          "sm:mt-0 sm:flex sm:w-auto sm:gap-x-5 sm:gap-y-0",
+          "flex flex-row items-center gap-x-5",
+          "[&>li>a]:font-medium [&>li>a]:hover:text-accent [&>li>a]:px-2 [&>li>a]:py-1",
         ]}
       >
-        <li class="col-span-2">
-          <a href="/posts" class:list={{ "active-nav": isActive("/posts") }}>
+
+
+        <li>
+          <a href="/" class:list={{ "active-nav": isActive("/") }}>
             文章
           </a>
         </li>
-        <li class="col-span-2">
-          <a href="/tags" class:list={{ "active-nav": isActive("/tags") }}>
-            分類
-          </a>
-        </li>
-        <li class="col-span-2">
+        <li>
           <a href="/about" class:list={{ "active-nav": isActive("/about") }}>
             關於
           </a>
@@ -110,6 +90,26 @@ const isActive = (path: string) => {
 </header>
 
 <script>
+  function initScrollHide() {
+    const header = document.querySelector("header");
+    if (!header) return;
+    let lastY = window.scrollY;
+    window.addEventListener("scroll", () => {
+      const currentY = window.scrollY;
+      if (currentY < 10) {
+        header.style.transform = "translateY(0)";
+      } else if (currentY > lastY) {
+        header.style.transform = "translateY(-100%)";
+      } else {
+        header.style.transform = "translateY(0)";
+      }
+      lastY = currentY;
+    }, { passive: true });
+  }
+
+  initScrollHide();
+  document.addEventListener("astro:after-swap", initScrollHide);
+
   function toggleNav() {
     const menuBtn = document.querySelector("#menu-btn");
     const menuItems = document.querySelector("#menu-items");

@@ -7,7 +7,7 @@
 html[data-theme="light"] {
   --background: #F5F5F5;
   --foreground: #4F4844;
-  --accent: #003777;
+  --accent: #e26132;
   --muted: #F6F3F2;
   --border: #e5e5e5;
 }
@@ -68,3 +68,6 @@ html[data-theme="dark"] {
 :target {
   scroll-margin-block: 1rem;
 }
+
+
+img { border-radius: 20px; }

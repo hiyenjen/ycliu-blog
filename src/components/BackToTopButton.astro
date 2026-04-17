@@ -24,10 +24,10 @@ import IconArrowNarrowUp from "@/assets/icons/IconArrowNarrowUp.svg";
       id="progress-indicator"
       class="absolute inset-0 -z-10 block size-14 scale-110 rounded-full bg-transparent md:hidden md:h-8 md:rounded-md"
     ></span>
-    <IconChevronLeft class="inline-block rotate-90 md:hidden" />
+    <IconChevronLeft class="inline-block md:hidden" />
     <span class="sr-only text-sm group-hover:text-accent md:not-sr-only">
-      <IconArrowNarrowUp class="inline-block size-4" />
-      Back To Top
+      <IconChevronLeft class="inline-block size-4" />
+      返回頂部
     </span>
   </button>
 </div>
@@ -46,8 +46,7 @@ import IconArrowNarrowUp from "@/assets/icons/IconArrowNarrowUp.svg";
 
     // Attach click event handler for back-to-top button
     backToTopBtn.addEventListener("click", () => {
-      document.body.scrollTop = 0; // For Safari
-      document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+      history.back();
     });
 
     // Handle button visibility according to scroll position

@@ -4,17 +4,17 @@ export const SITE = {
   profile: "https://ycliu.world",
   desc: "我是 ycliu，野保產品設計師，每月寫一篇野生動物 × 企業風險的分析。",
   title: "ycliu",
-  ogImage: "astropaper-og.jpg",
+  ogImage: "og.jpg",
   lightAndDarkMode: false,
-  postPerIndex: 4,
+  postPerIndex: 100,
   postPerPage: 5,
   scheduledPostMargin: 15 * 60 * 1000, // 15 minutes
   showArchives: false,
   showBackButton: true, // show back button in post detail
   editPost: {
-    enabled: true,
+    enabled: false,
     text: "Edit page",
-    url: "https://github.com/satnaing/astro-paper/edit/main/",
+    url: "",
   },
   dynamicOgImage: true,
   dir: "ltr", // "rtl" | "auto"
