@@ -6,7 +6,6 @@ import Footer from "@/components/Footer.astro";
 import Card from "@/components/Card.astro";
 import getSortedPosts from "@/utils/getSortedPosts";
 import IconHash from "@/assets/icons/IconHash.svg";
-import { SITE } from "@/config";
 
 const posts = await getCollection("blog");
 
@@ -54,17 +53,17 @@ const recentPosts = sortedPosts.filter(({ data }) => !data.featured);
       sessionStorage.setItem("backUrl", "/");
     }
 
-    const posts = Array.from(document.querySelectorAll(".post-item"));
+    const posts = Array.from(document.querySelectorAll(".post-item")) as HTMLElement[];
     const tagFilter = document.querySelector("#tag-filter");
     if (!tagFilter || posts.length === 0) return;
 
-    const allTags = new Set();
+    const allTags = new Set<string>();
     posts.forEach(p => {
       const tags = p.dataset.tags || "";
-      tags.split(",").filter(Boolean).forEach(t => allTags.add(t.trim()));
+      tags.split(",").filter(Boolean).forEach((t: string) => allTags.add(t.trim()));
     });
 
-    const makeBtn = (tag, label) => {
+    const makeBtn = (tag: string, label: string) => {
       const btn = document.createElement("button");
       btn.textContent = label;
       btn.dataset.tag = tag;
@@ -79,18 +78,18 @@ const recentPosts = sortedPosts.filter(({ data }) => !data.featured);
     allTags.forEach(tag => tagFilter.appendChild(makeBtn(tag, tag)));
 
     tagFilter.addEventListener("click", (e) => {
-      const btn = e.target.closest(".tag-btn");
+      const btn = (e.target as HTMLElement)?.closest(".tag-btn") as HTMLElement;
       if (!btn) return;
       const selected = btn.dataset.tag || "all";
 
       document.querySelectorAll(".tag-btn").forEach(b => {
-        b.classList.remove("!bg-foreground", "!text-background", "!border-foreground");
+        (b as HTMLElement).classList.remove("!bg-foreground", "!text-background", "!border-foreground");
       });
       btn.classList.add("!bg-foreground", "!text-background", "!border-foreground");
 
       posts.forEach(p => {
         const tags = p.dataset.tags || "";
-        const match = selected === "all" || tags.split(",").map(t => t.trim()).includes(selected);
+        const match = selected === "all" || tags.split(",").map((t: string) => t.trim()).includes(selected);
         p.style.display = match ? "" : "none";
       });
     });
