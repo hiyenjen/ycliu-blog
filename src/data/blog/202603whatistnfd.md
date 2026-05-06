@@ -58,12 +58,12 @@ P｜Prepare 準備：既然都已經看到可能發生的風險，企業該如�
 TNFD 就是在做這件事－以前報告書可能是寫「我們種樹，我們愛地球！」，現在變成了「我們在特定流域面臨五億美金的斷水風險！」－把從前飄渺的口號，變成最能理解的風險與數字
 
 
-![tnfd early adopter](/images/posts/202603whatistnfd/02-screenshot.png)
+![tnfd early adopter](/images/posts/202603whatistnfd/02-tnfd_adopter.png)
 
 
 查了一下 TNFD 官網提到的 Early Adopter ，看起來截至 2025.11 全球已經有 733 家採用囉！令人驚喜又驕傲的是，台灣在 TNFD 採用者中是全球第三名耶！
 
-![Taiwan](/images/posts/202603whatistnfd/03-inforgraphic.png)
+![Taiwan](/images/posts/202603whatistnfd/03-infographic.png)
 
 資料來源：[TNFD 官網](https://tnfd.global/engage/tnfd-adopters-list/?_sfm_hq-country=Taiwan%20(Province%20of%20China))
 
