@@ -5,11 +5,11 @@
 
 :root,
 html[data-theme="light"] {
-  --background: #fdfdfd;
-  --foreground: #282728;
-  --accent: #006cac;
-  --muted: #e6e6e6;
-  --border: #ece9e9;
+  --background: #F5F5F5;
+  --foreground: #4F4844;
+  --accent: #e26132;
+  --muted: #F6F3F2;
+  --border: #e5e5e5;
 }
 
 html[data-theme="dark"] {
@@ -21,7 +21,7 @@ html[data-theme="dark"] {
 }
 
 @theme inline {
-  --font-app: var(--font-google-sans-code);
+  --font-app: var(--font-noto-serif-tc), var(--font-google-sans-code), serif;
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-accent: var(--accent);
@@ -68,3 +68,6 @@ html[data-theme="dark"] {
 :target {
   scroll-margin-block: 1rem;
 }
+
+
+img { border-radius: 20px; }

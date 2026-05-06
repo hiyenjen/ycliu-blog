@@ -15,8 +15,8 @@ let tags = getUniqueTags(posts);
 
 <Layout title={`Tags | ${SITE.title}`}>
   <Header />
-  <Main pageTitle="Tags" pageDesc="All the tags used in posts.">
-    <ul class="flex flex-wrap gap-6">
+  <Main pageTitle="文章分類" pageDesc="文章們的歸屬，文章們的群聚">
+    <ul class="flex flex-wrap gap-3">
       {tags.map(({ tag, tagName }) => <Tag {tag} {tagName} />)}
     </ul>
   </Main>

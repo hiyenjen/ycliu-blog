@@ -1,18 +1,17 @@
 ---
 import { SHARE_LINKS } from "@/constants";
 import LinkButton from "./LinkButton.astro";
-
-const URL = Astro.url;
+import IconCopyLink from "@/assets/icons/IconCopyLink.svg";
 ---
 
 {
   SHARE_LINKS.length > 0 && (
     <div class="flex flex-none flex-col items-center justify-center gap-1 md:items-start">
-      <span class="italic">Share this post on:</span>
+      <span class="italic">分享這篇文章：</span>
       <div class="text-center">
         {SHARE_LINKS.map(social => (
           <LinkButton
-            href={`${social.href + URL}`}
+            href={`${social.href + Astro.url}`}
             class="scale-90 p-2 hover:rotate-6 sm:p-1"
             title={social.linkTitle}
           >
@@ -20,7 +19,25 @@ const URL = Astro.url;
             <span class="sr-only">{social.linkTitle}</span>
           </LinkButton>
         ))}
+        <button
+          id="copy-link-btn"
+          class="scale-90 p-2 hover:rotate-6 sm:p-1 inline-flex items-center opacity-90 hover:opacity-100 cursor-pointer"
+          title="複製連結"
+        >
+          <IconCopyLink class="inline-block size-6 scale-125 stroke-current stroke-2 fill-transparent sm:scale-110" />
+          <span class="sr-only">複製連結</span>
+        </button>
       </div>
     </div>
   )
 }
+
+<script>
+  const btn = document.getElementById("copy-link-btn");
+  btn?.addEventListener("click", () => {
+    navigator.clipboard.writeText(window.location.href).then(() => {
+      btn.style.opacity = "0.4";
+      setTimeout(() => { btn.style.opacity = "0.9"; }, 1200);
+    });
+  });
+</script>
