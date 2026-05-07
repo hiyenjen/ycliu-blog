@@ -6,7 +6,15 @@ pubDatetime: 2026-03-29T00:00:00.000+08:00
 description: "大自然是企業最大的免費供應商，但帳單已在準備中了...從 TNFD 框架、LEAP 方法論，到台灣 38 家採用者現況的入門整理——為什麼半導體大廠還在名單外？"
 featured: false
 draft: false
-tags: []
+tags:
+  - TNFD
+keywords:
+  - TNFD
+  - 生態風險
+  - 企業永續
+  - 自然相關財務揭露
+  - LEAP方法論
+  - 生物多樣性
 ---
 
 Hello 👋🏻 我是做野保工具的產品設計師 ycliu ，目前正在做一個幫企業看見生態風險的工具，這過程讓我把 TNFD 啃了一遍，也花了些時間用 NotebookLM 將 TNFD 文件了解過一輪，再嘗試用簡單方式寫下並分享出來！如果有錯誤也歡迎指正 XD
@@ -63,7 +71,7 @@ TNFD 就是在做這件事－以前報告書可能是寫「我們種樹，我們
 
 查了一下 TNFD 官網提到的 Early Adopter ，看起來截至 2025.11 全球已經有 733 家採用囉！令人驚喜又驕傲的是，台灣在 TNFD 採用者中是全球第三名耶！
 
-![Taiwan](/images/posts/202603whatistnfd/03-infographic.png)
+![Taiwan](/images/posts/202603whatistnfd/03-taiwan.png)
 
 資料來源：[TNFD 官網](https://tnfd.global/engage/tnfd-adopters-list/?_sfm_hq-country=Taiwan%20(Province%20of%20China))
 
