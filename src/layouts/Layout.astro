@@ -15,6 +15,7 @@ type Props = {
   pubDatetime?: Date;
   modDatetime?: Date | null;
   scrollSmooth?: boolean;
+  keywords?: string[];
 };
 
 const {
@@ -27,6 +28,7 @@ const {
   pubDatetime,
   modDatetime,
   scrollSmooth = false,
+  keywords,
 } = Astro.props;
 
 const socialImageURL = new URL(ogImage, Astro.url);
@@ -45,6 +47,7 @@ const structuredData = {
       ...(profile && { url: profile }),
     },
   ],
+  ...(keywords?.length && { keywords: keywords.join(", ") }),
 };
 ---
 
