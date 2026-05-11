@@ -147,6 +147,16 @@ const structuredData = {
       )
     }
 
+    {
+      SITE.analytics?.umamiAnalyticsId && (
+        <script
+          defer
+          src="https://cloud.umami.is/script.js"
+          data-website-id={SITE.analytics.umamiAnalyticsId}
+        />
+      )
+    }
+
     <ClientRouter />
 
     <!-- Minimal inline script to prevent FOUC - sets theme immediately -->
