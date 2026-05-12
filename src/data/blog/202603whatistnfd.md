@@ -1,9 +1,9 @@
 ---
 author: ycliu
-title: "TNFD × 大自然是你最大的供應商，但從來不開發票"
+title: "TNFD × 大自然是我們最大的供應商，而且不開發票的"
 slug: "202603whatistnfd"
 pubDatetime: 2026-03-29T00:00:00.000+08:00
-description: "大自然是企業最大的免費供應商，但帳單已在準備中了...從 TNFD 框架、LEAP 方法論，到台灣 38 家採用者現況的入門整理——為什麼半導體大廠還在名單外？"
+description: "大自然是企業最大的免費供應商，而帳單已在準備中了...從 TNFD 框架、LEAP 方法論，到台灣 38 家採用者現況的入門整理—為什麼半導體大廠還在名單外？"
 featured: false
 draft: false
 tags:
@@ -25,7 +25,7 @@ Hello 👋🏻 我是做野保工具的產品設計師 ycliu ，目前正在做
 
 正文開始
 
-想像你的企業公司，有個很大的供應商 —
+我們的企業公司，有個很大的供應商 —
 
 它提供你公司生產所需的 60% 資源，而且不跟你收費，不開發票XD 超佛心對吧！
 
@@ -39,7 +39,7 @@ Hello 👋🏻 我是做野保工具的產品設計師 ycliu ，目前正在做
 
 為了避免走到那一天，****TNFD 在 2023 年正式發布****。這是一個由市場主導、有科學支撐，同時也或政府背書的框架機制，讓企業對自然的依賴、對環境造成的衝擊，以及衍生的財務風險都無所遁形。
 
-這個發佈也改變了看自然的視角角度，以前企業的負責任可能是重視、棲地認養、做碳補償（洗個綠XD），但 TNFD 出現，把這件事的邏輯翻轉了－你們公司最依賴的這家供應商大自然，在未來跟你的合作可能會有哪些風險與衝擊。TNFD 的共同主席 David Craig 說：「自然風險，就坐在企業的現金流跟資本投資組合裡，不採取行動的代價正在快速累積。」以前的你選擇看不見而已。
+這個發佈也改變了看自然的視角角度，以前企業的負責任可能是重視、棲地認養、做碳補償（洗個綠XD），但 TNFD 出現，把這件事的邏輯翻轉了－公司最依賴的這家供應商大自然，在未來跟我們的合作可能會有哪些風險與衝擊。TNFD 的共同主席 David Craig 說：「自然風險，就坐在企業的現金流跟資本投資組合裡，不採取行動的代價正在快速累積。」以前我們選擇看不見而已。
 
 > "Nature loss is accelerating, and businesses today are inadequately accounting for nature-related dependencies, impacts, risks and opportunities. Nature-risk is sitting in company cash flows and capital portfolios today. The costs of inaction are mounting quickly. Businesses and financial institutions now have the tools they need to take action.”
 
@@ -77,7 +77,7 @@ TNFD 就是在做這件事－以前報告書可能是寫「我們種樹，我們
 
 雖然只有 34 家（2026.03 已增加至 38 家），猜測可能原因是因為出口導向壓力，或是電子業跟金融業的推力產生的連鎖效應，不過掃了一眼，最具代表性的幾家半導體大廠還不在名單內，整體滲透率不到 3%，這個缺口還很大哦！
 
-你所在的公司在哪個流域或棲地呢，那裡的自然風險帳單算過了嗎？有什麼想法歡迎留言，或直接找我聊。
+想知道哪間企業在哪些流域或棲地嗎？如果可以手動算算那裡的自然風險帳單，應該會更有感吧！
 
 下一篇，來找一間 Early Adopter 的企業，實際看看他們怎麼寫吧！
 
