@@ -3,18 +3,19 @@ author: ycliu
 title: "TNFD × 大自然是我們最大的供應商，而且不開發票的"
 slug: "202603whatistnfd"
 pubDatetime: 2026-03-29T00:00:00.000+08:00
-description: "大自然是企業最大的免費供應商，而帳單已在準備中了...從 TNFD 框架、LEAP 方法論，到台灣 38 家採用者現況的入門整理—為什麼半導體大廠還在名單外？"
+description: "TNFD 是什麼？從 LEAP 方法論到台灣 38 家早期採用者，一篇看懂企業如何把自然風險算成財報上的數字。"
 featured: false
 draft: false
 tags:
   - TNFD
 keywords:
   - TNFD
-  - 生態風險
-  - 企業永續
-  - 自然相關財務揭露
+  - TNFD是什麼
   - LEAP方法論
+  - 自然相關財務揭露
   - 生物多樣性
+  - 企業永續
+  - 台灣TNFD採用者
 ---
 
 Hello 👋🏻 我是做野保工具的產品設計師 ycliu ，目前正在做一個幫企業看見生態風險的工具，這過程讓我把 TNFD 啃了一遍，也花了些時間用 NotebookLM 將 TNFD 文件了解過一輪，再嘗試用簡單方式寫下並分享出來！如果有錯誤也歡迎指正 XD
@@ -82,3 +83,9 @@ TNFD 就是在做這件事－以前報告書可能是寫「我們種樹，我們
 下一篇，來找一間 Early Adopter 的企業，實際看看他們怎麼寫吧！
 
 「我是 ycliu，野保產品設計師，每月寫一篇野生動物 × 企業風險的分析。」
+
+### 延伸閱讀
+
+- [大海雀 × 生存 40 萬年，卻在 350 年內滅絕](https://ycliu.world/posts/202604greatauk/)
+- [2026 國際永續峰會心得：CSRone 現場紀錄](https://ycliu.world/posts/202605summit/)
+- [2026 ESG 與生物多樣性半年回顧：COP17、GRI 101、TNFD 在地指引](https://ycliu.world/posts/202610/)
